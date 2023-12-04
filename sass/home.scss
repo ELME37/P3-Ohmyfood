@@ -1,0 +1,203 @@
+@import './components/loader.scss';
+@import './components/heart.scss';
+@import './components/header.scss';
+@import './components/footer.scss';
+@import './style.scss';
+
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-grey);
+    background-color: var(--color-grey2);
+    padding: 16px 0;
+
+    .location__name {
+        font-size: 16px;
+        font-weight: 500;
+        font-style: normal;
+        color: var(--color-grey);
+        font-family: 'Roboto', Arial, sans-serif;
+        margin-left: 18px;
+        padding: 2px;
+        width: 124px;
+        border: transparent;
+        text-align: center;
+        background-color: var(--color-grey2)
+    }
+
+    .location__name::placeholder {
+        font-size: 16px;
+        font-weight: 500;
+        font-style: normal;
+        color: var(--color-grey);
+        font-family: 'Roboto', Arial, sans-serif;
+        text-align: center;
+        background-color: var(--color-grey2)
+    }
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+}
+
+.section__booking {
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-grey3);
+    text-align: center;
+
+    .booking--title {
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 40px;
+        margin-bottom: 0;
+        padding: 0 50px 10px 50px;
+    }
+
+    .booking--description {
+        font-size: 18px;
+        font-weight: 300;
+        margin: 0;
+    }
+
+    .booking--button {
+        background: linear-gradient(193deg, var(--color-purple) -11.44%, var(--color-pink) 123.93%);
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+        border-radius: 25px;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 14px 18px;
+        text-align: center;
+        color: var(--color-white);
+        margin: 28px 0 58px 0;
+        border: transparent;
+        cursor: pointer;
+
+        &:hover {
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, var(--color-purple) -5.2%, var(--color-pink) 110.74%);
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+        }
+    }
+}
+
+.section__functioning {
+    .functioning--title {
+        font-size: 24px;
+        font-weight: 700;
+        margin: 48px 0 2px 20px;
+    }
+
+    .functioning--list {
+        margin: 0;
+        list-style-type: none;
+        .functioning--list__item {
+           
+            position: relative;
+            &:before {
+                content: counter(mycounter);
+                counter-increment: mycounter;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 24px;
+                height: 24px;
+                background-color: var(--color-purple);
+                border-radius: 50%;
+                top: 50%;
+                transform: translateY(-50%);
+                left: -12px;
+                color: var(--color-white);
+                font-size: 12px;
+                z-index: 1;
+            }
+
+            .functioning--button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 322px;
+                background: var(--color-grey3);
+                box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+                border-radius: 20px;
+                border: transparent;
+                margin-top: 24px;
+                padding: 28px 38px;
+                cursor: pointer;
+
+                & i {
+                    font-size: 20px;
+                    color: var(--color-grey4);
+                }
+
+                &:hover i {
+                    color: var(--color-purple);
+                }
+
+                .functioning__item--text {
+                    margin: 0;
+                    margin-left: 26px;
+                    font-family: 'Roboto';
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+.section__restaurants {
+    background-color: var(--color-grey3);
+    margin-top: 68px;
+    padding-bottom: 66px;
+
+    .restaurants--title {
+        font-size: 24px;
+        font-weight: 700;
+        margin-left: 20px;
+    }
+    
+    .restaurants--card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+
+        .cards {
+            position: relative;
+            width: calc(100% - 40px);
+            height: 250px;
+            margin-bottom: 18px;
+            background-color: var(--color-white);
+            border-radius: 15px 15px 0 0;
+            border: 2px pink solid;
+    
+            .restaurants--card__figure {
+                position: relative;
+                width: 100%;
+                height: 230px;
+                border-radius: 15px 15px 0 0;
+                overflow: hidden;
+
+                .card__figure--img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    margin-top: -57px;
+                    object-fit: cover;
+                }
+            }
+
+            .restaurants--card__description {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: flex;
+            }
+        }
+    }
+}
+

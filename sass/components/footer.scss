@@ -1,0 +1,44 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-grey);
+    padding: 22px 26px;
+
+    .footer__logo {
+        font-family: Shrikhand;
+        font-size: 18px;
+        font-weight: 400;
+        color: var(--color-white);
+    }
+
+    .footer--list {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        color: var(--color-white);
+        padding: 0;
+        margin: 16px 0 0 0;
+
+        .footer--list__item {
+            display: flex;
+            justify-content: baseline;
+            align-items: center;
+
+            & i {
+                margin-right: 14px;
+            }
+
+            .footer__item--contact {
+                color: var(--color-white);
+            }
+
+            .footer__item--text {
+                font-family: Roboto;
+                font-size: 16px;
+                font-weight: 500;
+                margin: 0;
+                line-height: 2;
+            }
+        }
+    }
+}

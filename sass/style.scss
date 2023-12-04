@@ -1,13 +1,15 @@
-@import 'loader';
-
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap');
 
 :root {
     --color-purple: #9356DC ;
     --color-pink: #FF79DA;
     --color-green: #99E2D0;
     --color-grey: #353535;
+    --color-grey2: #EAEAEA;
+    --color-grey3: #F6F6F6;
+    --color-grey4: #7E7E7E;
+    --color-black: #101010;
+    --color-white: #FFF;
 }
 
 * {
@@ -22,42 +24,18 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', Arial, sans-serif;
+    counter-reset: mycounter;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-black);
+    cursor: pointer;
 }
 
 .container {
     width: 100%;
     max-width: 375px;
     margin: 0 auto;
-    padding: 0 25px;
     overflow: hidden;
-}
-
-.heart-checkbox {
-    display: none; /* Masquer la case à cocher */
-}
-
-.heart-checkbox + label #heart__nocheck{
-    color: red; /* Couleur de base du cœur */
-    cursor: pointer;
-    display: flex;
-}
-
-.heart-checkbox + label #heart__check {
-   display: none;
-}
-
-.heart-checkbox:checked + label #heart__check {
-    color: blue;
-    display: flex;
-}
-
-.heart-checkbox:checked + label #heart__nocheck {
-    display: none;
-}
-
-
-
-
-fa-heart {
-    pointer-events: none;
 }
