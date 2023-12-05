@@ -7,118 +7,120 @@
             integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
             crossorigin="anonymous" referrerpolicy="no-referrer">
         <title>Ohmyfood - La palette du goût</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="../css/restaurants.css">
     </head>
 
     <body>
-        <div class="loader">
-            <div class="loader__circle">
+        <div class="container">
+
+            <div class="container__loader">
+                <div class="loader__circle"></div>
                 <p class="loader__text">ohmyfood</p>
             </div>
-        </div>
 
-        <header class="header">
-            <a href="../index.html">
-                <i class="fa-solid fa-arrow-left"></i>
-            </a>
-            <h1 class="header__logo">
+            <header class="header">
                 <a href="../index.html">
-                    <img class="header__logo--img" src="./assets/logo/ohmyfood.png" alt="Ohmyfood">
+                    <i class="fa-solid fa-arrow-left"></i>
                 </a>
-            </h1>
-        </header>
-
-        <main class="main">
-            <div class="banner">
-                <img class="banner__img" src="../assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
-            </div>
-
-            <div class="menu">
-                <div class="menu__description">
-                    <h2 class="menu__title">La palette du goût</h2>
-                    <input type="checkbox" class="heart-checkbox" id="heartCheckbox">
-                    <label for="heartCheckbox">
-                        <i class="far fa-heart heart__nocheck"></i>
-                        <i class="fas fa-solid fa-heart heart__check"></i>
-                    </label>
-                </div>
-                
-                <section class="section__menu--entrees">
-                    <h3 class="menu--entrees__title">Entrées</h3>
-
-                    <div class="menu--entrees__choice">
-                        <input type="radio" id="entreeChoice1" name="entree" />
-                        <label for="entreeChoice1">
-                            <div class="entree__description">
-                                <h4 class="entree__title">Fricassée d'escargots</h4>
-                                <p class="entree__accompaniement">Au piment d'Espelette</p>
-                            </div>
-                            <div class="entree__price--and--check">
-                                <span class="entree__price">25€</span>
-                                <div class="entree__check">
-                                    <i class="fa-solid fa-circle-check"></i>
-                                </div>
-                            </div>
-                        </label>
-
-                        <input type="radio" id="entreeChoice2" name="entree" />
-                        <label for="entreeChoice2">
-                            <div class="entree__description">
-                                <h4 class="entree__title">Foie gras de canard mi-cuit</h4>
-                                <p class="entree__accompaniement">Et ses copeaux de truffe noire</p>
-                            </div>
-                            <div class="entree__price--and--check">
-                                <span class="entree__price">35€</span>
-                                <div class="entree__check">
-                                    <i class="fa-solid fa-circle-check"></i>
-                                </div>
-                            </div>
-                        </label>
-
-                        <input type="radio" id="entreeChoice3" name="entree" />
-                        <label for="entreeChoice3">
-                            <div class="entree__description">
-                                <h4 class="entree__title">Œuf au plat</h4>
-                                <p class="entree__accompaniement">Assaisonné à la truffe sur lit de caviar</p>
-                            </div>
-                            <div class="entree__price--and--check">
-                                <span class="entree__price">20€</span>
-                                <div class="entree__check">
-                                    <i class="fa-solid fa-circle-check"></i>
-                                </div>
-                            </div>
-                        </label>
-                        
-                    </div>
-                </section>
-
-            </div>
-           
-        </main>
-
-        <footer class="footer">
-            <div class="footer__logo">ohmyfood</div>
-            <ul class="footer--list">
-                <li class="footer--list__item">
-                    <i class="fa-solid fa-utensils"></i>
-                    <p class="footer__item--text">Proposer un restaurant</p>
-                </li>
-
-                <li class="footer--list__item">
-                    <i class="fa-solid fa-handshake-angle"></i>
-                    <p class="footer__item--text">Devenir partenaire</p>
-                </li>
-
-                <li class="footer--list__item">
-                    <p class="footer__item--text">Mentions légales</p>
-                </li>
-
-                <li class="footer--list__item">
-                    <a href="mailto:contact@ohmyfood.fr">
-                        <p class="footer__item--text">Contact</p>
+                <div class="header__logo">
+                    <a href="index.html">
+                        ohmyfood
                     </a>
-                </li>
-            </ul>
-        </footer>
+                </div>
+            </header>
+
+            <main class="main">
+                <div class="banner">
+                    <img class="banner__img" src="../assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
+                </div>
+
+                <div class="menu">
+                    <div class="menu__description">
+                        <h2 class="menu__title">La palette du goût</h2>
+                        <input type="checkbox" class="heart-checkbox" id="heartCheckbox">
+                        <label for="heartCheckbox">
+                            <i class="far fa-heart heart__nocheck"></i>
+                            <i class="fas fa-solid fa-heart heart__check"></i>
+                        </label>
+                    </div>
+                    
+                    <section class="section__menu--entrees">
+                        <h3 class="menu--entrees__title">Entrées</h3>
+
+                        <div class="menu--entrees__choice">
+                            <input type="radio" id="entreeChoice1" name="entree" />
+                            <label for="entreeChoice1">
+                                <div class="entree__description">
+                                    <h4 class="entree__title">Fricassée d'escargots</h4>
+                                    <p class="entree__accompaniement">Au piment d'Espelette</p>
+                                </div>
+                                <div class="entree__price--and--check">
+                                    <span class="entree__price">25€</span>
+                                    <div class="entree__check">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <input type="radio" id="entreeChoice2" name="entree" />
+                            <label for="entreeChoice2">
+                                <div class="entree__description">
+                                    <h4 class="entree__title">Foie gras de canard mi-cuit</h4>
+                                    <p class="entree__accompaniement">Et ses copeaux de truffe noire</p>
+                                </div>
+                                <div class="entree__price--and--check">
+                                    <span class="entree__price">35€</span>
+                                    <div class="entree__check">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <input type="radio" id="entreeChoice3" name="entree" />
+                            <label for="entreeChoice3">
+                                <div class="entree__description">
+                                    <h4 class="entree__title">Œuf au plat</h4>
+                                    <p class="entree__accompaniement">Assaisonné à la truffe sur lit de caviar</p>
+                                </div>
+                                <div class="entree__price--and--check">
+                                    <span class="entree__price">20€</span>
+                                    <div class="entree__check">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                    </div>
+                                </div>
+                            </label>
+                            
+                        </div>
+                    </section>
+
+                </div>
+            
+            </main>
+
+            <footer class="footer">
+                <div class="footer__logo">ohmyfood</div>
+                <ul class="footer--list">
+                    <li class="footer--list__item">
+                        <i class="fa-solid fa-utensils"></i>
+                        <p class="footer__item--text">Proposer un restaurant</p>
+                    </li>
+
+                    <li class="footer--list__item">
+                        <i class="fa-solid fa-handshake-angle"></i>
+                        <p class="footer__item--text">Devenir partenaire</p>
+                    </li>
+
+                    <li class="footer--list__item">
+                        <p class="footer__item--text">Mentions légales</p>
+                    </li>
+
+                    <li class="footer--list__item">
+                        <a href="mailto:contact@ohmyfood.fr">
+                            <p class="footer__item--text">Contact</p>
+                        </a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
     </body>
 </html>

@@ -1,0 +1,19 @@
+.heart-checkbox {
+    display: none;
+}
+
+.heart {
+    stroke: var(--color-black);
+    z-index: 1;
+    cursor: pointer;
+}
+  
+  .heart-checkbox:checked + label .heart {
+    fill: url(#paint0_linear_148695_527);
+    stroke: url(#paint0_linear_148695_527);
+  }
+
+  .heart-checkbox:hover + label .heart {
+    fill: url(#paint0_linear_148695_527);
+    stroke: url(#paint0_linear_148695_527);
+  }
