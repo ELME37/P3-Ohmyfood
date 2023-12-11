@@ -186,7 +186,6 @@ a {
 
 .container {
   width: 100%;
-  max-width: 375px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -259,7 +258,6 @@ a {
   background-color: var(--color-white);
   border-radius: 15px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
 }
 .menu .section__menu .menu--section__choices .menu__choice:first-child {
   margin-top: 16px;
@@ -267,11 +265,40 @@ a {
 .menu .section__menu .menu--section__choices .menu__choice .menu__input {
   display: none;
 }
+.menu .section__menu .menu--section__choices .menu__choice .menu__input:checked + .menu__label .menu__price--and--check {
+  margin-left: 60px;
+}
+.menu .section__menu .menu--section__choices .menu__choice .menu__input:checked + .menu__label .menu__price--and--check .menu__check {
+  right: 0;
+}
+.menu .section__menu .menu--section__choices .menu__choice .menu__input:checked + .menu__label .menu__price--and--check .menu__price {
+  left: -60px;
+}
 .menu .section__menu .menu--section__choices .menu__choice .menu__label {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
   width: 100%;
+  cursor: pointer;
+  overflow: hidden;
+}
+.menu .section__menu .menu--section__choices .menu__choice .menu__label:hover .menu__price--and--check {
+  margin-left: 60px;
+}
+.menu .section__menu .menu--section__choices .menu__choice .menu__label:hover .menu__price--and--check .menu__check {
+  right: 0;
+}
+.menu .section__menu .menu--section__choices .menu__choice .menu__label:hover .menu__price--and--check .menu__price {
+  left: -60px;
+}
+.menu .section__menu .menu--section__choices .menu__choice .menu__label .choice__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: calc(100% - 10px);
   padding: 16px;
 }
 .menu .section__menu .menu--section__choices .menu__choice .menu__label .choice__description .choice__title {
@@ -279,29 +306,72 @@ a {
   margin-bottom: 4px;
   text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
   font-family: Roboto;
   font-size: 18px;
   font-weight: 500;
+  width: 100%;
 }
 .menu .section__menu .menu--section__choices .menu__choice .menu__label .choice__description .choice__accompaniement {
   margin: 0;
   text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
   font-family: Roboto;
   font-size: 15px;
   font-weight: 300;
+  width: 100%;
 }
 .menu .section__menu .menu--section__choices .menu__choice .menu__label .menu__price--and--check {
+  position: relative;
   display: flex;
+  height: 100%;
+  transition: all 0.3s ease;
 }
 .menu .section__menu .menu--section__choices .menu__choice .menu__label .menu__price--and--check .menu__price {
+  display: flex;
+  justify-content: center;
+  align-items: end;
   margin-right: 14px;
+  padding: 16px 0;
+  left: 0;
+  transition: left 0.3s ease;
 }
-.button__menu {
+.menu .section__menu .menu--section__choices .menu__choice .menu__label .menu__price--and--check .menu__check {
+  position: absolute;
+  top: 0;
+  right: -60px;
+  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 60px;
+  color: var(--color-white);
+  background-color: var(--color-green);
+  border-radius: 0 15px 15px 0;
+  transition: right 0.3s ease;
+}
+.menu .button__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu .button__menu .menu__btn {
+  padding: 16px 48px;
   margin: 40px auto;
+  border-radius: 25px;
+  background: linear-gradient(193deg, var(--color-purple) -11.44%, var(--color-pink) 123.93%);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  color: var(--color-white);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  border: transparent;
+  cursor: pointer;
+}
+.menu .button__menu .menu__btn:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, var(--color-purple) -5.2%, var(--color-pink) 110.74%);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
 }
 
 /*# sourceMappingURL=restaurants.css.map */

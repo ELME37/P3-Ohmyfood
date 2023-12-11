@@ -77,7 +77,6 @@
                 background-color: var(--color-white);
                 border-radius: 15px;
                 box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
-                cursor: pointer;
 
                 &:first-child {
                     margin-top: 16px;
@@ -85,46 +84,104 @@
 
                 .menu__input {
                     display: none;
+
+                    &:checked + .menu__label .menu__price--and--check {
+                        margin-left: 60px;
+
+                        .menu__check {
+                            right: 0;
+                        }
+
+                        .menu__price {
+                            left: -60px;
+                        }
+                    }
+                    
                 }
 
                 .menu__label {
                     display: flex;
                     justify-content: space-between;
-                    align-items: center;
+                    align-items: end;
                     width: 100%;
-                    padding: 16px;
+                    cursor: pointer;
+                    overflow: hidden;
+
+                    &:hover .menu__price--and--check {
+                        margin-left: 60px;
+
+                        .menu__check {
+                            right: 0;
+                        }
+
+                        .menu__price {
+                            left: -60px;
+                        }
+                    }
 
                     .choice__description {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: baseline;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        width: calc(100% - 10px);
+                        padding: 16px;
+
                         .choice__title {
                             margin: 0;
                             margin-bottom: 4px;
                             text-overflow: ellipsis;
                             white-space: nowrap;
+                            overflow: hidden;
                             font-family: Roboto;
                             font-size: 18px;
                             font-weight: 500;
+                            width: 100%;
                         }
 
                         .choice__accompaniement {
                             margin: 0;
                             text-overflow: ellipsis;
                             white-space: nowrap;
+                            overflow: hidden;
                             font-family: Roboto;
                             font-size: 15px;
                             font-weight: 300;
+                            width: 100%;
                         }
                     }
 
                     .menu__price--and--check {
+                        position: relative;
                         display: flex;
+                        height: 100%;
+                        transition: all 0.3s ease;
 
                         .menu__price {
+                            display: flex;
+                            justify-content: center;
+                            align-items: end;
                             margin-right: 14px;
+                            padding: 16px 0;
+                            left: 0;
+                            transition: left 0.3s ease;
                         }
                         
                         .menu__check {
-                        
-                          
+                            position: absolute;
+                            top: 0;
+                            right: -60px;
+                            bottom: 0;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 60px;
+                            color: var(--color-white);
+                            background-color: var(--color-green);
+                            border-radius: 0 15px 15px 0;
+                            transition: right 0.3s ease;
                         }
                     }
                 }
@@ -132,16 +189,31 @@
 
         }
     }
-}
 
-.button__menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 40px auto;
-
-    .menu__button {
+    .button__menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
     
-
+        .menu__btn {
+            padding: 16px 48px;
+            margin: 40px auto;
+            border-radius: 25px;
+            background: linear-gradient(193deg, var(--color-purple) -11.44%, var(--color-pink) 123.93%);
+            box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+            color: var(--color-white);
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 500;
+            border: transparent;
+            cursor: pointer;
+    
+            &:hover {
+                background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, var(--color-purple) -5.2%, var(--color-pink) 110.74%);
+                box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+            }
+        }
     }
 }
+

@@ -186,7 +186,6 @@ a {
 
 .container {
   width: 100%;
-  max-width: 375px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -293,11 +292,11 @@ a {
   font-size: 12px;
   z-index: 1;
 }
-.section__functioning .functioning--list .functioning--list__item .functioning--button {
+.section__functioning .functioning--list .functioning--list__item .functioning__item {
   display: flex;
-  justify-content: center;
+  justify-content: baseline;
   align-items: center;
-  width: 322px;
+  width: 100%;
   background: var(--color-grey3);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
@@ -306,14 +305,14 @@ a {
   padding: 28px 38px;
   cursor: pointer;
 }
-.section__functioning .functioning--list .functioning--list__item .functioning--button i {
+.section__functioning .functioning--list .functioning--list__item .functioning__item i {
   font-size: 20px;
   color: var(--color-grey4);
 }
-.section__functioning .functioning--list .functioning--list__item .functioning--button:hover i {
+.section__functioning .functioning--list .functioning--list__item .functioning__item .fa-store {
   color: var(--color-purple);
 }
-.section__functioning .functioning--list .functioning--list__item .functioning--button .functioning__item--text {
+.section__functioning .functioning--list .functioning--list__item .functioning__item .functioning__item--text {
   margin: 0;
   margin-left: 26px;
   font-family: "Roboto";
