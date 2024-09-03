@@ -6,14 +6,42 @@
     stroke: var(--color-black);
     z-index: 1;
     cursor: pointer;
+  
+    & path {
+      stroke: var(--color-black);
+      stroke-dasharray: 70;
+      stroke-dashoffset: 0;
+    }
+
 }
   
-  .heart-checkbox:checked + label .heart {
+  .heart-checkbox:checked + label .heart path {
     fill: url(#paint0_linear_148695_527);
     stroke: url(#paint0_linear_148695_527);
   }
 
-  .heart-checkbox:hover + label .heart {
-    fill: url(#paint0_linear_148695_527);
-    stroke: url(#paint0_linear_148695_527);
+  .heart-checkbox:not(:checked):hover + label .heart path {
+
+    animation: heart 2s linear forwards;
+  }
+
+  @keyframes heart {
+    0% {
+      stroke-dashoffset: 0;
+      stroke: url(#paint0_linear_148695_527);
+    }
+    40% {
+      stroke-dashoffset: 70;
+      stroke: url(#paint0_linear_148695_527);
+    }
+    80% {
+      stroke-dashoffset: 140;
+      stroke: url(#paint0_linear_148695_527);
+      fill: transparent;
+    }
+    100% {
+      stroke-dashoffset: 140;
+      stroke: url(#paint0_linear_148695_527);
+      fill: url(#paint0_linear_148695_527);
+    }
   }

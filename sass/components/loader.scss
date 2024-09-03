@@ -10,7 +10,7 @@
     margin: 0;
     background-color: white;
     z-index: 1000;
-    animation: loader 3s ease-in-out forwards
+    animation: loader 2s ease-in-out forwards
 }
 
 .loader__circle {
@@ -22,7 +22,7 @@
     border-top: 4px solid var(--color-purple);
     border-right: 4px solid transparent;
     box-sizing: border-box;
-    animation: rotation 3s linear infinite;
+    animation: rotation 2s linear infinite;
   }
   .loader__circle::after {
     content: '';  
@@ -35,7 +35,7 @@
     border-radius: 50%;
     border-left: 4px solid var(--color-green);
     border-bottom: 4px solid transparent;
-    animation: rotation 1.5s linear infinite reverse;
+    animation: rotation 1s linear infinite reverse;
   }
   @keyframes rotation {
     0% {
