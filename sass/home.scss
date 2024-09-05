@@ -65,27 +65,24 @@
         margin: 0;
     }
 
-    .booking--button {
-        background: linear-gradient(193deg, var(--color-purple) -11.44%, var(--color-pink) 123.93%);
-        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-        border-radius: 25px;
-        font-size: 16px;
-        font-weight: 500;
-        padding: 14px 18px;
-        margin: 28px 0 58px 0;
-        border: transparent;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-
-        &:hover {
-            background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, var(--color-purple) -5.2%, var(--color-pink) 110.74%);
-            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
-        }
-
-        .booking--button__link {
+    .booking--button__link {
             text-align: center;
             color: var(--color-white);
-        }
+            background: linear-gradient(193deg, var(--color-purple) -11.44%, var(--color-pink) 123.93%);
+            box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 14px 18px;
+            margin: 28px 0 58px 0;
+            border: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, var(--color-purple) -5.2%, var(--color-pink) 110.74%);
+                box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+            }
     }
 }
 
@@ -220,6 +217,10 @@
             &:nth-child(4) {
                 animation: slide-left 3s forwards;
                 animation-delay: 2s; 
+            }
+
+            .restaurants--card__link {
+                flex-grow: 1;
             }
     
             .restaurants--card__figure {

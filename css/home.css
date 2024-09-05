@@ -83,8 +83,8 @@
 }
 
 .heart-checkbox:checked + label .heart path {
-  fill: url(#paint0_linear_148695_527);
-  stroke: url(#paint0_linear_148695_527);
+  fill: url(#paint0_linear_148695_5271);
+  stroke: url(#paint0_linear_148695_5271);
 }
 
 .heart-checkbox:not(:checked):hover + label .heart path {
@@ -94,21 +94,21 @@
 @keyframes heart {
   0% {
     stroke-dashoffset: 0;
-    stroke: url(#paint0_linear_148695_527);
+    stroke: url(#paint0_linear_148695_5271);
   }
   40% {
     stroke-dashoffset: 70;
-    stroke: url(#paint0_linear_148695_527);
+    stroke: url(#paint0_linear_148695_5271);
   }
   80% {
     stroke-dashoffset: 140;
-    stroke: url(#paint0_linear_148695_527);
+    stroke: url(#paint0_linear_148695_5271);
     fill: transparent;
   }
   100% {
     stroke-dashoffset: 140;
-    stroke: url(#paint0_linear_148695_527);
-    fill: url(#paint0_linear_148695_527);
+    stroke: url(#paint0_linear_148695_5271);
+    fill: url(#paint0_linear_148695_5271);
   }
 }
 .header {
@@ -301,7 +301,9 @@ a {
   font-weight: 300;
   margin: 0;
 }
-.section__booking .booking--button {
+.section__booking .booking--button__link {
+  text-align: center;
+  color: var(--color-white);
   background: linear-gradient(193deg, var(--color-purple) -11.44%, var(--color-pink) 123.93%);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
@@ -313,13 +315,9 @@ a {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-.section__booking .booking--button:hover {
+.section__booking .booking--button__link:hover {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, var(--color-purple) -5.2%, var(--color-pink) 110.74%);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
-}
-.section__booking .booking--button .booking--button__link {
-  text-align: center;
-  color: var(--color-white);
 }
 
 .section__functioning .functioning--title {
@@ -437,6 +435,9 @@ a {
 .section__restaurants .restaurants--card .cards:nth-child(4) {
   animation: slide-left 3s forwards;
   animation-delay: 2s;
+}
+.section__restaurants .restaurants--card .cards .restaurants--card__link {
+  flex-grow: 1;
 }
 .section__restaurants .restaurants--card .cards .restaurants--card__figure {
   position: relative;

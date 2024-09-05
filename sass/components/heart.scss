@@ -16,8 +16,8 @@
 }
   
   .heart-checkbox:checked + label .heart path {
-    fill: url(#paint0_linear_148695_527);
-    stroke: url(#paint0_linear_148695_527);
+    fill: url(#paint0_linear_148695_5271);
+    stroke: url(#paint0_linear_148695_5271);
   }
 
   .heart-checkbox:not(:checked):hover + label .heart path {
@@ -28,20 +28,20 @@
   @keyframes heart {
     0% {
       stroke-dashoffset: 0;
-      stroke: url(#paint0_linear_148695_527);
+      stroke: url(#paint0_linear_148695_5271);
     }
     40% {
       stroke-dashoffset: 70;
-      stroke: url(#paint0_linear_148695_527);
+      stroke: url(#paint0_linear_148695_5271);
     }
     80% {
       stroke-dashoffset: 140;
-      stroke: url(#paint0_linear_148695_527);
+      stroke: url(#paint0_linear_148695_5271);
       fill: transparent;
     }
     100% {
       stroke-dashoffset: 140;
-      stroke: url(#paint0_linear_148695_527);
-      fill: url(#paint0_linear_148695_527);
+      stroke: url(#paint0_linear_148695_5271);
+      fill: url(#paint0_linear_148695_5271);
     }
   }
