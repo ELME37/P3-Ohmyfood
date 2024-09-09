@@ -83,8 +83,8 @@
 }
 
 .heart-checkbox:checked + label .heart path {
-  fill: url(#paint0_linear_148695_527);
-  stroke: url(#paint0_linear_148695_527);
+  fill: url(#paint0_linear_148695_5271);
+  stroke: url(#paint0_linear_148695_5271);
 }
 
 .heart-checkbox:not(:checked):hover + label .heart path {
@@ -94,21 +94,21 @@
 @keyframes heart {
   0% {
     stroke-dashoffset: 0;
-    stroke: url(#paint0_linear_148695_527);
+    stroke: url(#paint0_linear_148695_5271);
   }
   40% {
     stroke-dashoffset: 70;
-    stroke: url(#paint0_linear_148695_527);
+    stroke: url(#paint0_linear_148695_5271);
   }
   80% {
     stroke-dashoffset: 140;
-    stroke: url(#paint0_linear_148695_527);
+    stroke: url(#paint0_linear_148695_5271);
     fill: transparent;
   }
   100% {
     stroke-dashoffset: 140;
-    stroke: url(#paint0_linear_148695_527);
-    fill: url(#paint0_linear_148695_527);
+    stroke: url(#paint0_linear_148695_5271);
+    fill: url(#paint0_linear_148695_5271);
   }
 }
 .header {
@@ -332,6 +332,10 @@ a {
 .menu .section__menu .menu--section__choices .menu__choice:nth-child(3) {
   animation: slide-up 2s forwards;
   animation-delay: 2.2s;
+}
+.menu .section__menu .menu--section__choices .menu__choice:nth-child(4) {
+  animation: slide-up 2s forwards;
+  animation-delay: 2.6s;
 }
 .menu .section__menu .menu--section__choices .menu__choice .menu__input {
   display: none;
