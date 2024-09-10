@@ -245,3 +245,23 @@
     }
 }
 
+@media screen and (min-width: 750px) {
+    .menu {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: -55px;
+
+        .menu__description {
+            justify-content: center;
+    
+            .menu__title {
+               margin-right: 20px;
+            }
+        }
+    
+        .section__menu {
+            width: 60%;
+            margin: 0 auto;
+        }
+    }
+}

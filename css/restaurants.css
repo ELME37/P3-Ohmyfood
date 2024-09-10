@@ -158,7 +158,7 @@
 }
 .footer .footer--list .footer--list__item {
   display: flex;
-  justify-content: baseline;
+  justify-content: start;
   align-items: center;
 }
 .footer .footer--list .footer--list__item i {
@@ -175,6 +175,28 @@
   line-height: 2;
 }
 
+@media screen and (min-width: 750px) {
+  .footer {
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: center;
+    padding: 30px 26px;
+  }
+  .footer .footer__logo {
+    margin-left: 80px;
+  }
+  .footer .footer--list {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
+  .footer .footer--list .footer--list__item {
+    margin-left: 10px;
+  }
+  .footer .footer--list .footer--list__item:nth-child(3) {
+    margin-left: 40px;
+  }
+}
 :root {
   --color-purple: #9356DC ;
   --color-pink: #FF79DA;
@@ -451,6 +473,24 @@ a {
 .menu .button__menu .menu__btn:hover {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, var(--color-purple) -5.2%, var(--color-pink) 110.74%);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+}
+
+@media screen and (min-width: 750px) {
+  .menu {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: -55px;
+  }
+  .menu .menu__description {
+    justify-content: center;
+  }
+  .menu .menu__description .menu__title {
+    margin-right: 20px;
+  }
+  .menu .section__menu {
+    width: 60%;
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=restaurants.css.map */

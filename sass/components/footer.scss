@@ -21,7 +21,7 @@
 
         .footer--list__item {
             display: flex;
-            justify-content: baseline;
+            justify-content: start;
             align-items: center;
 
             & i {
@@ -41,4 +41,32 @@
             }
         }
     }
+}
+
+@media screen and (min-width: 750px) {
+    .footer {
+        flex-direction: row-reverse;
+        justify-content: end;
+        align-items: center;
+        padding: 30px 26px;
+
+        .footer__logo {
+            margin-left: 80px;
+        }
+    
+        .footer--list {
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+    
+            .footer--list__item {
+                margin-left: 10px;
+
+                &:nth-child(3) {
+                    margin-left: 40px;
+                }
+            }
+        }
+    }
+        
 }
