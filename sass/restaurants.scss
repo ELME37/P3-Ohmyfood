@@ -1,9 +1,11 @@
+// Importation des fichiers de styles pour les composants spécifiques
 @import './components/loader.scss';
 @import './components/heart.scss';
 @import './components/header.scss';
 @import './components/footer.scss';
 @import './style.scss';
 
+// Style du bloc lbanner
 .banner {
     position: relative;
     width: 100%;
@@ -21,6 +23,7 @@
     }
 }
 
+// Style du bloc lmenu
 .menu {
     background-color: var(--color-grey3);
     border-radius: 40px 40px 0px 0px;
@@ -56,6 +59,7 @@
             animation: slide-up 2s forwards;
             animation-delay: 1s;
 
+            // Pseudo-élément pour ajouter une ligne sous le titre
             &::after {
                 content: "";
                 display: block;
@@ -85,7 +89,7 @@
                 box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
                 opacity: 0;
                 
-
+                // Animations spécifiques pour chaque élément
                 &:first-child {
                     margin-top: 16px;
                     animation: slide-up 2s forwards;
@@ -109,7 +113,7 @@
 
                 .menu__input {
                     display: none;
-
+                    // Gère l'apparition du prix selon le check
                     &:checked + .menu__label .menu__price--and--check {
                         margin-left: 60px;
 
@@ -132,6 +136,7 @@
                     cursor: pointer;
                     overflow: hidden;
 
+                    // Gère l'apparition du prix selon le check
                     &:hover .menu__price--and--check {
                         margin-left: 60px;
 
@@ -154,6 +159,7 @@
                         width: calc(100% - 10px);
                         padding: 16px;
 
+                        // Gère l'apparition des points de suspension si le texte est trop long
                         .choice__title {
                             margin: 0;
                             margin-bottom: 4px;
@@ -165,7 +171,8 @@
                             font-weight: 500;
                             width: 100%;
                         }
-
+                        
+                        // Gère l'apparition des points de suspension si le texte est trop long
                         .choice__accompaniement {
                             margin: 0;
                             text-overflow: ellipsis;
@@ -245,6 +252,7 @@
     }
 }
 
+// Responsive format tablette
 @media screen and (min-width: 750px) {
     .menu {
         width: 80%;

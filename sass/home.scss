@@ -1,9 +1,11 @@
+// Importation des fichiers de styles pour les composants spécifiques
 @import './components/loader.scss';
 @import './components/heart.scss';
 @import './components/header.scss';
 @import './components/footer.scss';
 @import './style.scss';
 
+// Style du bloc location
 .location {
     display: flex;
     justify-content: center;
@@ -37,6 +39,7 @@
     }
 }
 
+// Style du bloc booking
 .section {
     display: flex;
     flex-direction: column;
@@ -86,6 +89,7 @@
     }
 }
 
+// Style du bloc fonctionnement
 .section__functioning {
     .functioning--title {
         font-size: 24px;
@@ -105,6 +109,7 @@
             margin-top: 24px;
             margin-bottom: 12px;
 
+            // Animations spécifiques pour chaque élément
             &:nth-child(1) {
                 animation: slide-left 3s forwards;
                 animation-delay: 1.4s; 
@@ -120,6 +125,7 @@
                 animation-delay: 1.8s; 
             }
 
+            // Style pour le compteur avant chaque élément
             &:before {
                 content: counter(mycounter);
                 counter-increment: mycounter;
@@ -199,6 +205,7 @@
             box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
             opacity: 0;
 
+            // Animations spécifiques pour chaque élément
             &:nth-child(1) {
                 animation: slide-left 3s forwards;
                 animation-delay: 1.4s; 
@@ -278,6 +285,7 @@
     }
 }
 
+// Responsive format tablette
 @media screen and (min-width: 750px) {
     
     .section__booking {
@@ -463,7 +471,7 @@
     }
 }
 
-
+// Responsive format desktop
 @media screen and (min-width: 1024px) {
     .section__booking {
         .booking--title {
@@ -472,7 +480,7 @@
     }
     
     .section__functioning {
-        width: 85%;
+        width: 100%;
         .functioning--list {
             display: flex; //
             justify-content: space-between; //
@@ -646,7 +654,7 @@
     }
     
     .section__functioning {
-        width: 85%;
+        width: 100%;
         .functioning--list {
             display: flex; //
             justify-content: space-between; //
