@@ -162,6 +162,7 @@
   align-items: center;
 }
 .footer .footer--list .footer--list__item i {
+  width: 16px;
   margin-right: 14px;
 }
 .footer .footer--list .footer--list__item .footer__item--contact {
